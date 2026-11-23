@@ -1,0 +1,35 @@
+
+print("================================")
+print("       SIMPLE CALCULATOR")
+print("================================")
+
+try:
+    # Get input from the user
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    # Perform calculations
+    addition = num1 + num2
+    subtraction = num1 - num2
+    multiplication = num1 * num2
+
+    # Display results using f-strings
+    print("\n========== RESULTS ==========")
+    print(f"First number:  {num1:.2f}")
+    print(f"Second number: {num2:.2f}")
+    print("-----------------------------")
+    print(f"Addition:       {addition:.2f}")
+    print(f"Subtraction:    {subtraction:.2f}")
+    print(f"Multiplication: {multiplication:.2f}")
+
+    if num2 != 0:
+        division = num1 / num2
+        print(f"Division:       {division:.2f}")
+    else:
+        print("Division:       Cannot divide by zero")
+
+    print("=============================")
+    print("Thank you for using the calculator!")
+
+except ValueError:
+    print("Invalid input! Please enter numbers only.")
